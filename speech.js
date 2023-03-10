@@ -57,7 +57,7 @@ recognition.addEventListener("result", (e) => {
             p.innerText = text;
             texts.appendChild(p);
             console.log(msg);
-            // msg.cancel();
+            synth.cancel();
             searchResponseApi(text);
         }
     }
