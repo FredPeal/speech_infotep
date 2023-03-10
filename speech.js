@@ -70,7 +70,7 @@ recognition.addEventListener("end", () => {
 recognition.start();
 
 function searchResponseApi(text) {
-    axios.get('http://127.0.0.1:5000/question/' + text).then((response) => {
+    axios.get('https://4c43-181-37-213-161.eu.ngrok.io/question/' + text).then((response) => {
         response = response.data;
         console.log(response);
         talk(response);
